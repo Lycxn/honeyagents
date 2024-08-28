@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
 
   attacker:
@@ -8,7 +6,7 @@ services:
       context: .
       dockerfile: ./attacker/Dockerfile.attacker
     extra_hosts:
-      - "www.rebel-alliance.com:172.17.0.1"
+      - "www.rebel-alliance.com:172.19.0.2"
     networks:
       external_network:
         ipv4_address: 172.18.0.2
